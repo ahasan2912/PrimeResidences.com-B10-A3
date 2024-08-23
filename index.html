@@ -12,22 +12,95 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <style>
-        .font-manrope{
+        .font-manrope {
             font-family: "Manrope", sans-serif;
         }
     </style>
 </head>
 
 <body class="font-manrope">
-    <div class="">Hello</div>
+    <header class="md:container mx-auto">
+        <!-- navber -->
+        <nav class="p-2 lg:py-5 flex items-center">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="flex items-center space-x-2">
+                        <div class="bg-green-color w-7 h-7 rounded-full flex items-center justify-center"><i
+                                class="fa-solid fa-arrow-right text-lg -rotate-45"></i></div>
+                        <a href="#" class="text-4xl sm:text-3xl text-heading-color font-bold">Rinterio</a>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="#" class="text-base font-bold">Home</a></li>
+                        <li><a href="#" class="text-base opacity-70">Services</a></li>
+                        <li><a href="#" class="text-base opacity-70">Portfolio</a></li>
+                        <li><a href="#" class="text-base opacity-70">Blogs</a></li>
+                        <li><a href="#" class="text-base opacity-70">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end items-center justify-center space-x-7 cursor-pointer hidden sm:flex">
+                    <i class="fa-solid fa-magnifying-glass text-xl sm:text-lg opacity-70"></i>
+                    <i class="fa-solid fa-cart-shopping text-xl sm:text-lg opacity-70"></i>
+                    <div class="flex items-center justify-center">
+                        <a href="#" class="btn bg-green-color font-bold rounded-3xl
+                        ">Book Consult<p class="bg-black w-6 h-6 rounded-full flex items-center justify-center"><i
+                                    class="fa-solid fa-arrow-right text-base -rotate-45 text-white"></i></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown md:overflow-hidden relative">
+                <div tabindex="0" role="button" class="bg-[#eeebeb] w-12 h-5 rounded-full btn btn-ghost lg:hidden">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute -left-[170px] top-10">
+                    <li><a href="#" class="text-base font-semibold">Home</a></li>
+                    <li><a href="#" class="text-base">Services</a></li>
+                    <li><a href="#" class="text-base">Portfolio</a></li>
+                    <li><a href="#" class="text-base">Blogs</a></li>
+                    <li><a href="#" class="text-base">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- banner -->
+        <div class="mt-5">
+            <div>
+                <img src="./image/banner.png" alt="" class="mx-auto">
+            </div>
+            <div
+                class="flex flex-col items-center justify-center text-center space-y-7 w-full md:w-3/4 mx-auto mt-5 sm:mt-0">
+                <h1 class="text-5xl sm:text-6xl w-[322px] sm:w-[700px] text-heading-color font-extrabold">A barn house
+                    of this design has a striking appearance</h1>
+                <p class="text-font-color px-2 text-justify sm:text-center">The barn house captivates with its blend of
+                    rustic charm and modern
+                    sophistication, featuring weathered wood, sleek metal accents, and large
+                    windows that flood the space with natural light.
+                </p>
+                <div class="flex items-center justify-center">
+                    <a href="#" class="btn bg-hlaf-green-color font-bold rounded-3xl
+                    ">View Details<p class="bg-green-color w-6 h-6 rounded-full flex items-center justify-center"><i
+                                class="fa-solid fa-arrow-right text-base -rotate-45 text-white"></i></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'hockey-primary': '#FF4240',
-                        'hockey-bg-primary': "rgb(255, 66, 64)",
+                        'green-color': '#ABEF5F',
+                        'hlaf-green-color': 'rgba(171, 239, 95, 0.6)',
+                        'font-color': '#494949',
+                        'heading-color': '#212121',
+                        'offwhite-color': 'rgb(255, 255, 255)',
+                        'offwhite-color2': 'rgba(255, 255, 255, 0)',
                     }
                 }
             }
